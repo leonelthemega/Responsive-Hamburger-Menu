@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger Menu</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav id="main-nav">
+        <a href="#" onclick="openSlideMenu()">
+            <svg width="30" height="30">
+                <path d="M0,5 30,5" stroke="#fff" stroke-width="5"/>
+                <path d="M0,14 30,14" stroke="#fff" stroke-width="5"/>
+                <path d="M0,23 30,23" stroke="#fff" stroke-width="5"/>
+            </svg>
+        </a>
+    </nav>
+
+    <section id="sideMenu" class="side-menu">
+        <a href="#" class="btn-close" onclick="closeSlideMenu()" >&times;</a>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+
+    </section>
+
+    <section id="main">
+        <h1>Welcome to this Website</h1>
+    </section>
+
+    <script>
+        function openSlideMenu(){
+            document.getElementById("sideMenu").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+        function closeSlideMenu(){
+            document.getElementById("sideMenu").style.width = "0px";
+            document.getElementById("main").style.marginLeft = "0px";
+        }
+    </script>
+</body>
+</html>

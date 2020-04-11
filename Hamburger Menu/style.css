@@ -1,0 +1,51 @@
+body{
+    background-color: #333;
+    color: white;
+}
+
+.side-menu a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 40px;
+
+}
+
+.side-menu a:hover{
+    color: red;
+    transition: .4s ease-in-out;
+}
+
+.side-menu{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background-color: #111;
+    opacity: 0.8;
+    padding-top: 90px;
+    display: flex;
+    flex-direction: column;
+    transition: .7s ease-in-out;
+
+}
+
+.side-menu .btn-close{
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-size: 2rem;
+}
+
+#main{
+    transition: margin-left .7s ease-in-out;
+ 
+}
+
+#main h1{
+    margin-left: 20px;
+}
